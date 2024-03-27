@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    },
+    {
+      "path": "stub-webservice",
+      "default": true
+    },
+    {
+      "path": "sample",
+      "default": true
+    }
+  ],
+  "name": "apex-stub-webservice",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "60.0"
+}

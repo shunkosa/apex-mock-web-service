@@ -1,0 +1,13 @@
+{
+  "orgName": "Apex Stub Webservice",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi", "ZipSupportInApex"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
