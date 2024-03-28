@@ -7,5 +7,6 @@
 .sfdx
 .sf
 .vscode
+*-meta.xml
 
 coverage/
