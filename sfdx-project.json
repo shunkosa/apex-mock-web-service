@@ -5,15 +5,15 @@
       "default": false
     },
     {
-      "path": "stub-webservice",
+      "path": "stub-web-service",
       "default": true
     },
     {
-      "path": "stub-webservice-sample",
+      "path": "stub-web-service-sample",
       "default": false
     }
   ],
-  "name": "apex-stub-webservice",
+  "name": "apex-stub-web-service",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "60.0"

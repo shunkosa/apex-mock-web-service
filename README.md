@@ -10,7 +10,7 @@ A simple, portable, and customizable stub API server for Salesforce development.
 
 1. Add `"ZipSupportInApex"` feature to your scratch org definition file and create a scratch org with it.
 
-2. Deploy `stub-webservice` folder in this repository.
+2. Deploy `stub-web-service` folder in this repository.
 
 3. Upload stub API responses as zipped csv filed to static resource.
 
@@ -23,7 +23,7 @@ To make it easier to imagine the actual integration, the following steps shows s
 
 ### Org for Stub Web service
 
-1. Deploy `stub-webservice-sample` folder.
+1. Deploy `stub-web-service-sample` folder.
 
 2. Copy consumer key and consumer secret of the Connected App named `Apex Stub Web Service`. You'll use them later.
 
