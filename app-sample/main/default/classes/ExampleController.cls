@@ -42,9 +42,9 @@ public with sharing class ExampleController {
     public String name { get; set; }
 
     @AuraEnabled
-    public String price { get; set; }
+    public Integer price { get; set; }
 
     @AuraEnabled
-    public String amount { get; set; }
+    public Integer amount { get; set; }
   }
 }
