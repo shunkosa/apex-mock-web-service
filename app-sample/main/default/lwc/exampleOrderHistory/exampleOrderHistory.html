@@ -1,0 +1,46 @@
+<template>
+  <lightning-card title="Order History" icon-name="custom:custom18">
+    <lightning-spinner lwc:if={loading}></lightning-spinner>
+    <div class="slds-p-horizontal_small" lwc:else>
+      <div lwc:if={hasError} class="slds-text-align_center">
+        <lightning-icon icon-name="utility:error"></lightning-icon>
+        <div class="slds-p-around_small">
+          <p>Error occurred while retrieving order history.</p>
+          <p>{errorMessage}</p>
+        </div>
+      </div>
+      <div lwc:elseif={hasOrders} class="orders">
+        <template for:each={orders} for:item="order">
+          <div key={order.orderId} class="order-container">
+            <ul class="order-header">
+              <li><label>Order Number</label><br />{order.orderId}</li>
+              <li><label>Status</label><br />{order.status}</li>
+              <li>
+                <label>Order Date</label><br /><lightning-formatted-date-time
+                  value={order.purchasedDate}
+                ></lightning-formatted-date-time>
+              </li>
+            </ul>
+            <template for:each={order.products} for:item="product">
+              <dl key={product.name} class="slds-dl_horizontal order-detail">
+                <dt class="slds-dl_horizontal__label order-item-label">Product Name</dt>
+                <dd class="slds-dl_horizontal__detail">{product.name}</dd>
+                <dt class="slds-dl_horizontal__label order-item-label">Unit Price</dt>
+                <dd class="slds-dl_horizontal__detail">
+                  <lightning-formatted-number
+                    value={product.price}
+                    currency-code="JPY"
+                    format-style="currency"
+                  ></lightning-formatted-number>
+                </dd>
+                <dt class="slds-dl_horizontal__label order-item-label">Amount</dt>
+                <dd class="slds-dl_horizontal__detail">{product.amount}</dd>
+              </dl>
+            </template>
+          </div>
+        </template>
+      </div>
+      <div lwc:else>No order history.</div>
+    </div>
+  </lightning-card>
+</template>

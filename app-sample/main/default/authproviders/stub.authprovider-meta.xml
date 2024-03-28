@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>consumer_key_of_the_connected_app_in_stub_org</consumerKey>
+    <consumerSecret>consumer_secret_of_the_connected_app_in_stub_org</consumerSecret>
+    <defaultScopes>full refresh_toke</defaultScopes>
+    <friendlyName>Stub API</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>Salesforce</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+</AuthProvider>

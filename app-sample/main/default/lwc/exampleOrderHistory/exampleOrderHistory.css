@@ -1,0 +1,26 @@
+.orders .order-container:not(:first-child) {
+  border-top: 1px solid rgb(201, 201, 201);
+  padding-top: var(--lwc-spacingSmall);
+}
+
+.orders .order-container:not(:last-child) {
+  padding-bottom: var(--lwc-spacingSmall);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-detail {
+  padding-top: var(--lwc-spacingXSmall);
+}
+
+label,
+.order-item-label {
+  color: var(--lwc-colorTextLabel);
+}
+
+label {
+  font-size: 90%;
+}

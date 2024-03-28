@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Orders 0001</label>
+    <protected>false</protected>
+    <values>
+        <field>FilePath__c</field>
+        <value xsi:type="xsd:string">example01.json</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>RequestURI__c</field>
+        <value xsi:type="xsd:string">/stub/customer/0001/orders</value>
+    </values>
+    <values>
+        <field>StaticResourceName__c</field>
+        <value xsi:type="xsd:string">StubApiResponse</value>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+</CustomMetadata>
