@@ -46,10 +46,8 @@ global with sharing class StubWebService {
     ];
     StaticResource sr = [SELECT Body FROM StaticResource WHERE Name = :stubSetting.StaticResourceName__c];
     Compression.ZipReader reader = new Compression.ZipReader(sr.body);
-    Compression.ZipEntry jsonFile = reader.getEntry(stubSetting.FilePath__c);
-    Blob jsonBlob = reader.extract(jsonFile);
     RestContext.response.addHeader('Content-Type', 'application/json');
-    RestContext.response.responseBody = jsonBlob;
+    RestContext.response.responseBody = reader.extract(stubSetting.FilePath__c);
     RestContext.response.statusCode = Integer.valueOf(stubSetting.StatusCode__c);
   }
 }
