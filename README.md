@@ -14,7 +14,7 @@ A simple, portable, and customizable stub API server for Salesforce development.
 
 3. Upload stub API responses as zipped csv filed to static resource.
 
-4. Add records to custom metadata `Stub Webservice Setting` to manage the mapping between path and response, and status code.
+4. Add records to custom metadata `Stub Web Service Setting` to manage the mapping between path and response, and status code.
 
 5. https://YourDomain.my.salesforce.com/apexrest/stub/* is the dndpoint of the stub API. Get access token in any way and call it. If you're developing an integration from Salesforce. See also the following sample app setup steps.
 
@@ -25,7 +25,7 @@ To make it easier to imagine the actual integration, the following steps shows s
 
 1. Deploy `stub-webservice-sample` folder.
 
-2. Copy consumer key and consumer secret of the Connected App named `Apex Stub Webservice`. You'll use them later.
+2. Copy consumer key and consumer secret of the Connected App named `Apex Stub Web Service`. You'll use them later.
 
 ### Org for Integration Development
 
@@ -41,7 +41,7 @@ To make it easier to imagine the actual integration, the following steps shows s
 
 6. Login to the org for stub web service and authorize access.
 
-7. Assign permission set `Apex Stub Webservice Sample App` to your user.
+7. Assign permission set `Apex Stub Web Service Sample App` to your user.
 
 8. Add `Example Order History` custom lighting component to account record page and update Account Number field of an account to `0001`, `0002` or `0003`. You can see order history based on the stub api response.
 

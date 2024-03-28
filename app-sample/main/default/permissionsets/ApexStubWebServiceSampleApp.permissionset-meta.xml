@@ -9,5 +9,5 @@
         <externalCredentialPrincipal>StubAPI-Example</externalCredentialPrincipal>
     </externalCredentialPrincipalAccesses>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Apex Stub Webservice Sample App</label>
+    <label>Apex Stub Web Service Sample App</label>
 </PermissionSet>
