@@ -5,7 +5,6 @@
  */
 @IsTest(seeAllData=true)
 public with sharing class StubWebServiceTest {
-
   /**
    * @description Tests HTTP GET
    */
@@ -21,7 +20,10 @@ public with sharing class StubWebServiceTest {
 
     StubWebService.doGet();
 
-    Map<String, String> responseBody = (Map<String, String>)JSON.deserialize(response.responseBody.toString(), Map<String, String>.class);
+    Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
+      response.responseBody.toString(),
+      Map<String, String>.class
+    );
     Assert.areEqual('Hello World!', responseBody.get('message'));
     Assert.areEqual(200, response.statusCode);
   }
@@ -41,7 +43,10 @@ public with sharing class StubWebServiceTest {
 
     StubWebService.doPost();
 
-    Map<String, String> responseBody = (Map<String, String>)JSON.deserialize(response.responseBody.toString(), Map<String, String>.class);
+    Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
+      response.responseBody.toString(),
+      Map<String, String>.class
+    );
     Assert.areEqual('Hello World!', responseBody.get('message'));
     Assert.areEqual(200, response.statusCode);
   }
@@ -61,7 +66,10 @@ public with sharing class StubWebServiceTest {
 
     StubWebService.doPut();
 
-    Map<String, String> responseBody = (Map<String, String>)JSON.deserialize(response.responseBody.toString(), Map<String, String>.class);
+    Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
+      response.responseBody.toString(),
+      Map<String, String>.class
+    );
     Assert.areEqual('Hello World!', responseBody.get('message'));
     Assert.areEqual(200, response.statusCode);
   }
@@ -81,7 +89,10 @@ public with sharing class StubWebServiceTest {
 
     StubWebService.doDelete();
 
-    Map<String, String> responseBody = (Map<String, String>)JSON.deserialize(response.responseBody.toString(), Map<String, String>.class);
+    Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
+      response.responseBody.toString(),
+      Map<String, String>.class
+    );
     Assert.areEqual('Hello World!', responseBody.get('message'));
     Assert.areEqual(200, response.statusCode);
   }
