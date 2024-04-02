@@ -3,7 +3,7 @@ public with sharing class ExampleController {
   public static OrderResponse getOrders(String customerId) {
     HttpRequest req = new HttpRequest();
     req.setMethod('GET');
-    req.setEndpoint('callout:StubAPI/customer/' + customerId + '/orders');
+    req.setEndpoint('callout:MockAPI/customer/' + customerId + '/orders');
     HttpResponse res = (new Http()).send(req);
     OrderResponse result = (OrderResponse)JSON.deserialize(res.getBody(), OrderResponse.class);
     if (res.getStatusCode() != 200) {

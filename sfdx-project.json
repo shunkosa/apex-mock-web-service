@@ -5,15 +5,15 @@
       "default": false
     },
     {
-      "path": "stub-web-service",
+      "path": "mock-web-service",
       "default": true
     },
     {
-      "path": "stub-web-service-sample",
+      "path": "mock-web-service-sample",
       "default": false
     }
   ],
-  "name": "apex-stub-web-service",
+  "name": "apex-mock-web-service",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "60.0"

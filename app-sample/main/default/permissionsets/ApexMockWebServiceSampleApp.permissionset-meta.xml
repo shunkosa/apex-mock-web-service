@@ -6,8 +6,8 @@
     </classAccesses>
     <externalCredentialPrincipalAccesses>
         <enabled>true</enabled>
-        <externalCredentialPrincipal>StubAPI-Example</externalCredentialPrincipal>
+        <externalCredentialPrincipal>MockAPI-Example</externalCredentialPrincipal>
     </externalCredentialPrincipalAccesses>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Apex Stub Web Service Sample App</label>
+    <label>Apex Mock Web Service Sample App</label>
 </PermissionSet>

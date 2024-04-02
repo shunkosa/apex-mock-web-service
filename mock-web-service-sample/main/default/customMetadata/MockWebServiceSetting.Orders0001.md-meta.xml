@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>Apex Test</label>
+    <label>Orders 0001</label>
     <protected>false</protected>
     <values>
         <field>FilePath__c</field>
-        <value xsi:type="xsd:string">test.json</value>
+        <value xsi:type="xsd:string">example01.json</value>
     </values>
     <values>
         <field>IsActive__c</field>
-        <value xsi:type="xsd:boolean">false</value>
+        <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
         <field>RequestURI__c</field>
-        <value xsi:type="xsd:string">/stub/apex-test</value>
+        <value xsi:type="xsd:string">/mock/customer/0001/orders</value>
     </values>
     <values>
         <field>StaticResourceName__c</field>
-        <value xsi:type="xsd:string">StubWebServiceTest</value>
+        <value xsi:type="xsd:string">MockApiResponse</value>
     </values>
     <values>
         <field>StatusCode__c</field>

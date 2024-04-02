@@ -1,10 +1,10 @@
 /**
- * @description Test class for StubWebService class
- * Notice that this class has dependencies to 'StubWebServiceTest' static resource and custom metadata record
+ * @description Test class for MockWebService class
+ * Notice that this class has dependencies to 'MockWebServiceTest' static resource and custom metadata record
  * because they can't be created dynamically in test class
  */
 @IsTest(seeAllData=true)
-public with sharing class StubWebServiceTest {
+public with sharing class MockWebServiceTest {
   /**
    * @description Tests HTTP GET
    */
@@ -12,13 +12,13 @@ public with sharing class StubWebServiceTest {
   public static void testGet() {
     RestRequest request = new RestRequest();
     request.httpMethod = 'GET';
-    request.requestURI = '/stub/apex-test';
+    request.requestURI = '/mock/apex-test';
     RestContext.request = request;
 
     RestResponse response = new RestResponse();
     RestContext.response = response;
 
-    StubWebService.doGet();
+    MockWebService.doGet();
 
     Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
       response.responseBody.toString(),
@@ -35,13 +35,13 @@ public with sharing class StubWebServiceTest {
   public static void testPost() {
     RestRequest request = new RestRequest();
     request.httpMethod = 'POST';
-    request.requestURI = '/stub/apex-test';
+    request.requestURI = '/mock/apex-test';
     RestContext.request = request;
 
     RestResponse response = new RestResponse();
     RestContext.response = response;
 
-    StubWebService.doPost();
+    MockWebService.doPost();
 
     Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
       response.responseBody.toString(),
@@ -58,13 +58,13 @@ public with sharing class StubWebServiceTest {
   public static void testPut() {
     RestRequest request = new RestRequest();
     request.httpMethod = 'PUT';
-    request.requestURI = '/stub/apex-test';
+    request.requestURI = '/mock/apex-test';
     RestContext.request = request;
 
     RestResponse response = new RestResponse();
     RestContext.response = response;
 
-    StubWebService.doPut();
+    MockWebService.doPut();
 
     Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
       response.responseBody.toString(),
@@ -81,13 +81,13 @@ public with sharing class StubWebServiceTest {
   public static void testDelete() {
     RestRequest request = new RestRequest();
     request.httpMethod = 'DELETE';
-    request.requestURI = '/stub/apex-test';
+    request.requestURI = '/mock/apex-test';
     RestContext.request = request;
 
     RestResponse response = new RestResponse();
     RestContext.response = response;
 
-    StubWebService.doDelete();
+    MockWebService.doDelete();
 
     Map<String, String> responseBody = (Map<String, String>) JSON.deserialize(
       response.responseBody.toString(),

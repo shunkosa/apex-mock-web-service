@@ -1,5 +1,5 @@
 {
-  "orgName": "Apex Stub Web Service",
+  "orgName": "Apex Mock Web Service",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi", "ZipSupportInApex"],
   "settings": {
