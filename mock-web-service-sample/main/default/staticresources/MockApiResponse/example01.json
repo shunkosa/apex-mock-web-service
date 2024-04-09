@@ -4,15 +4,15 @@
     {
       "orderId": "1116-2897",
       "purchasedDate": "2024-03-15",
-      "status": "Completed",
+      "status": "完了",
       "products": [
         {
-          "name": "Test Product 03",
+          "name": "テスト商品03",
           "price": 2800,
           "amount": 3
         },
         {
-          "name": "Test Product 04",
+          "name": "テスト商品04",
           "price": 4000,
           "amount": 4
         }
@@ -21,15 +21,15 @@
     {
       "orderId": "1114-1234",
       "purchasedDate": "2024-01-10",
-      "status": "Cancelled",
+      "status": "キャンセル済",
       "products": [
         {
-          "name": "Test Product 01",
+          "name": "テスト商品01",
           "price": 1000,
           "amount": 4
         },
         {
-          "name": "Test Product 02",
+          "name": "テスト商品02",
           "price": 2000,
           "amount": 3
         }

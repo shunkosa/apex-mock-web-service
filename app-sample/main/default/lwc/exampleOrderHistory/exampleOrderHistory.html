@@ -5,7 +5,7 @@
       <div lwc:if={hasError} class="slds-text-align_center">
         <lightning-icon icon-name="utility:error"></lightning-icon>
         <div class="slds-p-around_small">
-          <p>Error occurred while retrieving order history.</p>
+          <p>注文履歴の取得中にエラーが発生しました。</p>
           <p>{errorMessage}</p>
         </div>
       </div>
@@ -13,19 +13,19 @@
         <template for:each={orders} for:item="order">
           <div key={order.orderId} class="order-container">
             <ul class="order-header">
-              <li><label>Order Number</label><br />{order.orderId}</li>
-              <li><label>Status</label><br />{order.status}</li>
+              <li><label>注文番号</label><br />{order.orderId}</li>
+              <li><label>ステータス</label><br />{order.status}</li>
               <li>
-                <label>Order Date</label><br /><lightning-formatted-date-time
+                <label>注文日</label><br /><lightning-formatted-date-time
                   value={order.purchasedDate}
                 ></lightning-formatted-date-time>
               </li>
             </ul>
             <template for:each={order.products} for:item="product">
               <dl key={product.name} class="slds-dl_horizontal order-detail">
-                <dt class="slds-dl_horizontal__label order-item-label">Product Name</dt>
+                <dt class="slds-dl_horizontal__label order-item-label">商品名</dt>
                 <dd class="slds-dl_horizontal__detail">{product.name}</dd>
-                <dt class="slds-dl_horizontal__label order-item-label">Unit Price</dt>
+                <dt class="slds-dl_horizontal__label order-item-label">単価</dt>
                 <dd class="slds-dl_horizontal__detail">
                   <lightning-formatted-number
                     value={product.price}
@@ -33,14 +33,14 @@
                     format-style="currency"
                   ></lightning-formatted-number>
                 </dd>
-                <dt class="slds-dl_horizontal__label order-item-label">Amount</dt>
+                <dt class="slds-dl_horizontal__label order-item-label">数量</dt>
                 <dd class="slds-dl_horizontal__detail">{product.amount}</dd>
               </dl>
             </template>
           </div>
         </template>
       </div>
-      <div lwc:else>No order history.</div>
+      <div lwc:else>注文履歴がありません。</div>
     </div>
   </lightning-card>
 </template>
