@@ -10,15 +10,13 @@ A lightweight, portable, and customizable API mock for Salesforce development. T
 
 ## Setup
 
-1. Add `"ZipSupportInApex"` feature to your scratch org definition file and create a scratch org with it.
+1. Deploy `mock-web-service` folder in this repository.
 
-2. Deploy `mock-web-service` folder in this repository.
+2. Upload API mock responses as zipped csv filed to static resource.
 
-3. Upload API mock responses as zipped csv filed to static resource.
+3. Add records to custom metadata `Mock Web Service Setting` to manage the mapping between path and response, and status code.
 
-4. Add records to custom metadata `Mock Web Service Setting` to manage the mapping between path and response, and status code.
-
-5. https://yourdomain.my.salesforce.com/apexrest/mock/* is the endpoint of the API mock. Get an access token in any way and call the API. If you're developing an integration from Salesforce, see also the following the sample app setup steps.
+4. https://yourdomain.my.salesforce.com/apexrest/mock/* is the endpoint of the API mock. Get an access token in any way and call the API. If you're developing an integration from Salesforce, see also the following the sample app setup steps.
 
 ## Optional Setup for Sample App
 To make it easier to imagine an actual integration, the following steps shows separately for the integration development org and the API mock org, but they can be the same single org.
