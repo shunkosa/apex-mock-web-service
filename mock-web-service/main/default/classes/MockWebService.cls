@@ -36,7 +36,7 @@ global with sharing class MockWebService {
   }
 
   /**
-   * @description Set fake JSON response based on the setting custom metadata and csv files
+   * @description Set mock JSON response based on the setting custom metadata and csv files
    */
   private static void setResponse() {
     MockWebServiceSetting__mdt mockSetting = [
