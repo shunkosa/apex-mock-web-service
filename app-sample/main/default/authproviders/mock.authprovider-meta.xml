@@ -2,7 +2,7 @@
 <AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
     <consumerKey>consumer_key_of_the_connected_app_in_mock_org</consumerKey>
     <consumerSecret>consumer_secret_of_the_connected_app_in_mock_org</consumerSecret>
-    <defaultScopes>full refresh_toke</defaultScopes>
+    <defaultScopes>api web refresh_token</defaultScopes>
     <friendlyName>Mock API</friendlyName>
     <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
     <isPkceEnabled>true</isPkceEnabled>
